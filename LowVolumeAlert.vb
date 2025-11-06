@@ -16,7 +16,7 @@ do while true
     if quietCount=10 then API.Function("SelectIndex", Input:="lowvolumealert.gtzip", Value:="2")
     if quietCount=20 then API.Function("SelectIndex", Input:="lowvolumealert.gtzip", Value:="3")
     if quietCount>30 then quietCount=9
-    Console.WriteLine(quietCount)
+    'Console.WriteLine(quietCount)
   end if
   if Volume>minLevel then
     API.Function("SelectIndex", Input:="lowvolumealert.gtzip", Value:="1")
